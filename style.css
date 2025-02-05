@@ -9,8 +9,10 @@
     background-image: url(img/bg.jpg);
     background-position: center;
     background-size: cover;
+    width: 100%;
     height: auto;
     padding: 40px 0;
+    overflow: hidden;
 }
 
 .content1 {
@@ -177,9 +179,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background: #000;
-    width: 1378px;
     padding: 40px 0;
+    background-color: #000;
 }
 
 .counter-item {
@@ -270,7 +271,7 @@
 
     .counter-section {
         padding: 30px 20px;
-        width: 103%;
+        width: 100%;
     }
 
     .counter-icon {
