@@ -9,7 +9,8 @@
     background-image: url(img/bg.jpg);
     background-position: center;
     background-size: cover;
-    height: 65vh;
+    height: auto;
+    padding: 40px 0;
 }
 
 .content1 {
@@ -22,123 +23,31 @@
 
 .content1 h1{
     font-size: 45px;
-    color: #111; 
+    color: #0e3742; 
+    position: relative;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent #0e3742);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 4s linear infinite;
 }
 
-.content1 h1 span{
-    display: table-cell;
-    margin: 0;
-    padding: 0;
-    animation: animate 2s linear infinite;
-}
-
-.content1 h1 span:nth-child(1)
+@keyframes animate
 {
-    animation-delay: 0s;
-}
-
-.content1 h1 span:nth-child(2)
-{
-    animation-delay: 0.25s;
-}
-
-.content1 h1 span:nth-child(3)
-{
-    animation-delay: 0.5s;
-}
-
-.content1 h1 span:nth-child(4)
-{
-    animation-delay: 0.75s;
-}
-
-.content1 h1 span:nth-child(5)
-{
-    animation-delay: 1s;
-}
-
-.content1 h1 span:nth-child(6)
-{
-    animation-delay: 1.25s;
-}
-
-.content1 h1 span:nth-child(7)
-{
-    animation-delay: 1.5s;
-}
-
-.content1 h1 span:nth-child(8)
-{
-    animation-delay: 1.75s;
-}
-
-.content1 h1 span:nth-child(9)
-{
-    animation-delay: 0.25s;
-}
-
-.content1 h1 span:nth-child(10)
-{
-    animation-delay: 0.5s;
-}
-
-.content1 h1 span:nth-child(11)
-{
-    animation-delay: 0.75s;
-}
-
-.content1 h1 span:nth-child(12)
-{
-    animation-delay: 1s;
-}
-
-.content1 h1 span:nth-child(13)
-{
-    animation-delay: 1.25s;
-}
-
-.content1 h1 span:nth-child(14)
-{
-    animation-delay: 1.5s;
-}
-
-.content1 h1 span:nth-child(15)
-{
-    animation-delay: 1.75s;
-}
-
-.content1 h1 span:nth-child(16)
-{
-    animation-delay: 1.25s;
-}
-
-.content1 h1 span:nth-child(17)
-{
-    animation-delay: 1.5s;
-}
-
-.content1 h1 span:nth-child(18)
-{
-    animation-delay: 1.75s;
-}
-
-@keyframes animate{
-    0%{
-        color: #fff;
-        filter: blur(2px);
-        text-shadow: 0 0 10px #00b3ff,
-                    0 0 20px #00b3ff,
-                    0 0 40px #00b3ff,
-                    0 0 80px #00b3ff,
-                    0 0 120px #00b3ff,
-                    0 0 200px #00b3ff,
-                    0 0 300px #00b3ff,
-                    0 0 400px #00b3ff;
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        box-shadow: none;
     }
-    5%, 95%{
-        color: #111;
-        filter: blur(0px);
-        text-shadow: 0 0 10px none;
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
     }
 }
 
@@ -290,7 +199,8 @@
     }
 
     .content1 h1{
-        font-size: 27px;
+        font-size: 25px;
+        letter-spacing: 0px;
     }
 
     .content1 h6 {
